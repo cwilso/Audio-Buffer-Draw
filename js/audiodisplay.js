@@ -14,7 +14,7 @@ function drawBuffer( width, height, context, buffer ) {
             if (datum > max)
                 max = datum;
         }
-        context.fillRect(i,(1+min)*amp,1,(max-min)*amp);
+        context.fillRect(i,(1+min)*amp,1,Math.max(1,(max-min)*amp));
     }
 }
 
