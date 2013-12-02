@@ -7,7 +7,7 @@ function drawBuffer( width, height, context, buffer ) {
     for(var i=0; i < width; i++){
         var min = 1.0;
         var max = -1.0;
-        for (j=0; j<step; j++) {
+        for (var j=0; j<step; j++) {
             var datum = data[(i*step)+j]; 
             if (datum < min)
                 min = datum;
